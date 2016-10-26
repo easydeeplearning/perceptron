@@ -9,7 +9,7 @@ public class PerceptronTest {
 		trainer.addSample(new double[]{0, 1}, 1);
 		trainer.addSample(new double[]{0, 0}, 0);
 		
-		int attempts = trainer.train(0.5, 200);
+		int attempts = trainer.train(0.1, 200);
 		Perceptron perceptron = trainer.getPerceptron();
 
 		System.out.printf("Attempts: %d\nw0 = %f\nw1: %f\nbias: %f\n", attempts, perceptron.getWeight()[0], perceptron.getWeight()[1], perceptron.getBias());
